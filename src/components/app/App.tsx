@@ -3,10 +3,8 @@ import './App.css';
 
 export interface Quote {
   id: number,
-  title: string,
+  quoteText: string,
   uploadDate: Date,
-  imgUrl: string,
-  tag: string
 }
 
 
