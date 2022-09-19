@@ -6,7 +6,7 @@ interface QuoteListProps {
     datalist: Quote[]
 }
 
-const handleDelete = async (id: string | number) => {
+const handleDelete = async (id) => {
     await axios.delete("https://localhost:7120/quotes/" + id, { data: id }
     ); window.location.reload()
 }

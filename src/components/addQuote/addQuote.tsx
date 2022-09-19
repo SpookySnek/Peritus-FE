@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import { nanoid } from 'nanoid'
+import { customAlphabet } from 'nanoid/async'
 import { Quote } from '../app/App'
 
 const AddQuote = () => {
@@ -12,7 +12,7 @@ const AddQuote = () => {
       await axios.post("https://localhost:7120/quotes", {
         "quoteText": quoteText,
         "uploadDate": new Date(),
-        "id": nanoid(14)
+        "id": customAlphabet('1234567890', 14)
       })
       window.location.reload()
     }
