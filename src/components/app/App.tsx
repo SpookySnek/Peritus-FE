@@ -38,7 +38,7 @@ function App() {
         </div>
       </div>
       <footer>
-        <small>Created by Carl Morisbak Olsson @2022 </small>
+        <small>Created by Carl Morisbak Olsson @2022</small>
       </footer>
     </>
   );
