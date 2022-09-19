@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { MantineProvider, Text } from '@mantine/core';
-import './App.css';
 import AddQuote from '../addQuote/addQuote';
 import QuoteList from '../quoteList/quoteList';
 import axios from 'axios';
